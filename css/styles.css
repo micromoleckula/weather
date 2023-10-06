@@ -4,6 +4,7 @@ body {
   background: linear-gradient(180deg, #FFF 0%, #0FF 100%);
   background-repeat: no-repeat;
   color: black;
+  font-family: 'Concert One';
 }
 
 .section {
@@ -15,21 +16,92 @@ body {
 .title {
   text-align: center;
   color: #00195A;
-  font-family: 'Concert One';
   font-size: 123px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  margin-top: 75px;
 }
 
 .input__weather {
-
+  display: flex;
+  margin-top: 170px;
 }
 
 .input {
-
+  color: #545454;
+  font-family: 'Concert One';
+  font-size: 18px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right:10px;
 }
 
 .input__button {
+  color: #FFF;
+  font-family: 'Concert One';
+  font-size: 20px;
+  border-radius: 10px;
+  background: #FF6262;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 40px;
+  margin-left: 10px;
+}
 
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00195A;
+}
+
+.card img {
+  max-width: 320px;
+  max-height: 240px;
+}
+
+.card {
+  display: flex;
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+  max-height: 330px;
+  max-width: 740px;
+}
+
+.card::before {
+  max-width: 720px;
+  max-height: ;
+}
+
+.left__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.from {
+  display: flex;
+}
+
+.city {
+  color: #00195A;
+  font-size: 60px;
+}
+
+.country {
+  color: #FFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 100px;
+  height: 50px;
+  color: #FFF;
+  background: #FF6262;
+}
+
+.weather__digit {
+  font-size: 110px;
+}
+
+.weather__name {
+  font-size: 20px;
 }
