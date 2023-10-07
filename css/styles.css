@@ -52,6 +52,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: #00195A;
+  margin-bottom: 100px;
 }
 
 .card img {
