@@ -1,13 +1,18 @@
-const apiKey = 'd3057b3385514ca5a93185410230910';
+function generateSolidity() {
+  const randomNumber = Math.random() * 100; // Генерируем число от 0 до 100
+  let result;
 
+  if (randomNumber < 1) {
+      result = 'Ультра солидный';
+  } else if (randomNumber < 10) {
+      result = 'Мега солидный';
+  } else if (randomNumber < 30) {
+      result = 'Солидный';
+  } else if (randomNumber < 60) {
+      result = 'Серьезный человек';
+  } else {
+      result = 'Не серьезный';
+  }
 
-// http://api.weatherapi.com/v1/current.json?key=d3057b3385514ca5a93185410230910&q=Dnipro&aqi=no
-
-
-const query = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Dnipro&aqi=no`
-
-fetch(query).then((response) => {
-  return response.json()
-}).then((data) => {
-  console.log(data);
-})
+  document.getElementById('result').innerText = `Ваш уровень солидности: ${result}`;
+}

@@ -1,112 +1,40 @@
-@import url(./reset.css);
-
 body {
-  background: linear-gradient(180deg, #FFF 0%, #0FF 100%);
-  background-repeat: no-repeat;
-  color: black;
-  font-family: 'Concert One';
-}
-
-.section {
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
-.title {
+h1 {
+  color: #333;
+}
+
+.solid-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 15px 30px;
   text-align: center;
-  color: #00195A;
-  font-size: 123px;
-  margin-top: 75px;
-}
-
-.input__weather {
-  display: flex;
-  margin-top: 170px;
-}
-
-.input {
-  color: #545454;
-  font-family: 'Concert One';
-  font-size: 18px;
-  background: white;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-right:10px;
-}
-
-.input__button {
-  color: #FFF;
-  font-family: 'Concert One';
-  font-size: 20px;
-  border-radius: 10px;
-  background: #FF6262;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 20px 40px;
-  margin-left: 10px;
-}
-
-.section2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #00195A;
-  margin-bottom: 100px;
-}
-
-.card img {
-  max-width: 320px;
-  max-height: 240px;
-}
-
-.card {
-  display: flex;
-  padding: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
   border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
-  max-height: 330px;
-  max-width: 740px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.card::before {
-  max-width: 720px;
+.solid-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
-.left__card {
-  display: flex;
-  flex-direction: column;
-}
-
-.from {
-  display: flex;
-}
-
-.city {
-  color: #00195A;
-  font-size: 60px;
-}
-
-.country {
-  position: relative;
-  margin-left: 15px;
-  bottom: 15px;
-  color: #FFF;
+#result {
   font-size: 20px;
-  text-transform: uppercase;
-  margin-top: auto;
-  padding: 5px 15px;
-  border-radius: 10px;
-  color: #FFF;
-  background: #FF6262;
-}
-
-.weather__digit {
-  font-size: 110px;
-}
-
-.weather__name {
-  font-size: 20px;
+  color: #333;
 }
